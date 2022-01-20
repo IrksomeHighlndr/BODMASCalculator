@@ -11,7 +11,7 @@ std::vector<Token> Tokeniser::tokenise(const std::string& Equation)
 		j++;
 		switch (StringChar)
 		{
-			// impliment ignore whitespace
+			// implement ignore whitespace
 		case ' ':
 			break;
 		case '0':
@@ -118,7 +118,7 @@ std::vector<Token> Tokeniser::tokenise(const std::string& Equation)
 
 void Token::DebugLog()
 {
-	std::cout << "Token(" << stringTokenType[mTokenType] << ")" << "\n  =>  " << mTokenValue << std::endl;
+	std::cout << "Token =>" << stringTokenType[mTokenType] <<  "\n  =>  " << mTokenValue << std::endl;
 }
 
 void Tokeniser::endToken(Token& token, std::vector<Token>& tokens)

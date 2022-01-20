@@ -27,7 +27,7 @@ static const char* stringTokenType[] =
 	"MULTIPLICATION",
 	"OPERATOR"
 };
-
+																					
 class Token
 {
 public:

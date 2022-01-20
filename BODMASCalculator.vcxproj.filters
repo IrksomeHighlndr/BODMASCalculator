@@ -15,28 +15,41 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="token.cpp">
+    <ClCompile Include="src\operations.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="parser.cpp">
+    <ClCompile Include="src\parser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="operations.cpp">
+    <ClCompile Include="src\token.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="token.h">
+    <ClInclude Include="src\headers\operations.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="parser.h">
+    <ClInclude Include="src\headers\parser.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="operations.h">
+    <ClInclude Include="src\headers\token.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitattributes" />
+    <None Include=".gitignore" />
+    <None Include="LICENSE" />
+    <None Include="README.md" />
+    <None Include="x64\Debug\BODMASCalculator.tlog\BODMASCalculator.lastbuildstate" />
+    <None Include="x64\Debug\BODMASCalculator.tlog\CL.command.1.tlog" />
+    <None Include="x64\Debug\BODMASCalculator.tlog\CL.read.1.tlog" />
+    <None Include="x64\Debug\BODMASCalculator.tlog\CL.write.1.tlog" />
+    <None Include="x64\Debug\BODMASCalculator.tlog\link.command.1.tlog" />
+    <None Include="x64\Debug\BODMASCalculator.tlog\link.read.1.tlog" />
+    <None Include="x64\Debug\BODMASCalculator.tlog\link.write.1.tlog" />
   </ItemGroup>
 </Project>
