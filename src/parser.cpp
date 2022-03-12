@@ -4,7 +4,7 @@
 
 Operations operators;
 
-float Parser::parse(std::vector<Token> TokenisedInput)
+float Parser::parse(std::vector<Token>TokenisedInput)
 {
 	TokenisedString = TokenisedInput;
 
@@ -35,15 +35,15 @@ float Parser::term()
 	float result = factor();
 	while (TempToken.mTokenType == MULTIPLICATION || TempToken.mTokenType == DIVISION)
 	{
-		if (TempToken.mTokenType == MULTIPLICATION)
-		{
-			next_token();
-			result = operators.multiply(result , factor());
-		}
-		else if (TempToken.mTokenType == DIVISION)
+		if (TempToken.mTokenType == DIVISION)
 		{
 			next_token();
 			result = operators.divide(result , factor());
+		}
+		else if (TempToken.mTokenType == MULTIPLICATION)
+		{
+			next_token();
+			result = operators.multiply(result , factor());
 		}
 	}
 	return result;
@@ -51,7 +51,7 @@ float Parser::term()
 
 float Parser::factor()
 {
-	float result = NULL;
+	float result = NULL; //initiating result or ide shows squigly lines which I hate......
 	TempToken = TokenisedString[Counter];
 	if (TempToken.mTokenType == DOUBLE)
 	{

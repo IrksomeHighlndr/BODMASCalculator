@@ -2,7 +2,7 @@
 #include "string"
 #include "vector"
 
-enum TokenType
+enum TokenType : unsigned int
 {
 	NONE,
 	DOUBLE,
@@ -41,7 +41,7 @@ private:
 class Tokeniser
 {
 public:
-	std::vector<Token> tokenise(const std::string& Equation);
+	std::vector<Token>tokenise(const std::string& Equation);
 
 private:
 	void endToken(Token& token, std::vector<Token>& tokens);
